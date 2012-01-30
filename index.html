@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+  </head>
+  <body align="center">
+    {% for perfil in profile %}
+      <div class="profile">
+      <h1>{{ perfil.name }}</h1>
+      <div class="foto"><img src="/images/eu.png" width="200" height="150" alt=""></div><br>
+      <div class="title">{{ perfil.title }}</div><br>
+      <div class="subtitle">{{ perfil.subtitle }}</div><br>
+      <div class="description">{{ perfil.description }}</div><br>
+      <div class="services" align="right">{{ servicos }}</div>
+      </div>
+    {% endfor %}
+
+  </body>
+</html>
